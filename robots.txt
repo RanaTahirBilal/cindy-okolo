@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ranatahirbilal.github.io/cindy-okolo/sitemap.xml
