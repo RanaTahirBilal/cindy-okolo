@@ -27,3 +27,87 @@ a:focus,button:focus,.form-control:focus{outline:2px solid #fec107;outline-offse
   .navbar-brand img{max-height:32px}
   .banner-section{padding-top:150px}
 }
+
+/* ============================================================================
+   Sections added 2026-10-06: about, quote band, career, credentials.
+   The site was 3,793px at 1440 against a portfolio median of 7,823px, and the
+   page made counter claims (four hospital systems, six professional bodies)
+   that it never backed up by naming any of them. Every line below is from her
+   published profile or her two releases. Nothing here is invented.
+   ========================================================================== */
+
+.about-section{padding-top:120px;padding-bottom:120px;background-color:#111216}
+.about-section .heading{font-size:40px;line-height:1.2;color:#fff;font-weight:700;margin-bottom:0}
+.about-section .heading span{color:#fec107}
+.about-section .text{color:#C8C8C8;font-size:16px;line-height:30px;margin-bottom:22px}
+.about-section .lede{color:#fff;font-size:19px;line-height:34px}
+.about-section .pull{border-left:3px solid #fec107;padding:4px 0 4px 24px;margin:34px 0 0 0;
+  color:#fff;font-size:20px;line-height:34px;font-style:italic}
+.about-section .pull cite{display:block;margin-top:12px;font-style:normal;font-size:13px;
+  letter-spacing:.14em;text-transform:uppercase;color:#fec107}
+@media(max-width:991px){.about-section .heading{font-size:32px;margin-bottom:28px}}
+
+.quote-band{padding-top:80px;padding-bottom:80px;background-color:#fec107;text-align:center}
+.quote-band blockquote{margin:0 auto;max-width:900px;color:#111216;font-size:30px;line-height:48px;
+  font-weight:600}
+.quote-band cite{display:block;margin-top:22px;font-style:normal;font-size:13px;
+  letter-spacing:.16em;text-transform:uppercase;color:#23262d}
+@media(max-width:767px){.quote-band blockquote{font-size:21px;line-height:34px}
+  .quote-band{padding-top:56px;padding-bottom:56px}}
+
+.career-section{padding-top:120px;padding-bottom:120px;background-color:#111216}
+.career-section .heading{font-size:40px;line-height:1.2;color:#fff;font-weight:700;margin-bottom:22px}
+.career-section .heading span{color:#fec107}
+.career-section .text{color:#C8C8C8;font-size:16px;line-height:30px}
+.career-section .now{margin-top:34px;border:1px solid rgba(254,193,7,.42);padding:22px 24px}
+.career-section .now .label{display:block;font-size:12px;letter-spacing:.16em;text-transform:uppercase;
+  color:#fec107;margin-bottom:8px}
+.career-section .now b{color:#fff;font-size:19px;display:block;line-height:1.4}
+.career-section .now span.where{color:#C8C8C8;font-size:15px;display:block;margin-top:6px}
+.plates{list-style:none;padding:0;margin:0}
+.plates li{border-top:1px solid rgba(255,255,255,.14);padding:24px 0;display:flex;
+  align-items:baseline;gap:20px}
+.plates li:last-child{border-bottom:1px solid rgba(255,255,255,.14)}
+.plates li .num{color:#fec107;font-size:13px;letter-spacing:.1em;flex:0 0 auto;min-width:28px}
+.plates li .who{color:#fff;font-size:19px;line-height:1.45}
+@media(max-width:991px){.career-section .heading{font-size:32px}
+  .plates{margin-top:34px}}
+
+.cred-section{padding-top:120px;padding-bottom:120px;background-color:#23262d}
+.cred-section .heading{font-size:40px;line-height:1.2;color:#fff;font-weight:700;margin-bottom:16px}
+.cred-section .heading span{color:#fec107}
+.cred-section .cap{color:#C8C8C8;font-size:16px;line-height:30px;margin-bottom:56px}
+.cred-section h3{font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:#fec107;
+  margin:0 0 26px 0;font-weight:700}
+.credlist{list-style:none;padding:0;margin:0}
+.credlist li{color:#fff;font-size:17px;line-height:1.5;padding:0 0 22px 24px;position:relative}
+.credlist li::before{content:"";position:absolute;left:0;top:9px;width:6px;height:6px;
+  background:#fec107;border-radius:1px}
+.credlist li small{display:block;color:#C8C8C8;font-size:14px;line-height:1.6;margin-top:5px}
+@media(max-width:991px){.cred-section .heading{font-size:32px}
+  .cred-section .cap{margin-bottom:40px}
+  .cred-section [class*="col-lg-5"]{margin-top:54px}}
+
+/* The services band had no heading at all, which left the whole document with two
+   headings total. For a page whose job is to be read by search engines and by
+   assistants, a flat outline is a real defect, not a cosmetic one. */
+.services-section .band-head{text-align:center;margin-bottom:70px}
+.services-section .band-head .heading{font-size:40px;color:#fff;font-weight:700;margin-bottom:14px}
+.services-section .band-head .heading span{color:#fec107}
+.services-section .band-head .text{color:#C8C8C8;font-size:16px;line-height:30px;
+  max-width:720px;margin:0 auto}
+@media(max-width:991px){.services-section .band-head .heading{font-size:32px}}
+
+/* Hero call to action: the banner had no way out of it. */
+.banner-section .hero-cta{margin-top:34px}
+
+/* Side menu: the demo's own placeholder telephone number and email address were
+   still in it, along with dead social links and the template vendor's credit. */
+.side-menu .side-footer .menu-company-details .text{display:block;line-height:1.7}
+
+/* The side menu panel is a 90% yellow wash, so white text in its footer column was
+   invisible: measured 1.00:1 against its own background. The demo shipped it that way
+   with a placeholder telephone number in it, which is why nobody had read it. The nav
+   links beside it are already dark on yellow, so the footer column follows them. */
+.side-menu .side-footer .text{color:#23262d}
+.side-menu .side-footer .menu-company-details .text b{color:#111216;font-weight:700}
