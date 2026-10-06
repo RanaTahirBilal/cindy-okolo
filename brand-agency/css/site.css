@@ -1,0 +1,29 @@
+/* Site specific overrides for cindy-okolo. The MegaOne demo files are not edited. */
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.contact-form .form-control::placeholder{color:#969CA3;opacity:1}
+.contact-form .form-control::-webkit-input-placeholder{color:#969CA3;opacity:1}
+.contact-form .form-control:-ms-input-placeholder{color:#969CA3;opacity:1}
+.carousel-item img{width:100%;height:auto;object-fit:cover}
+.navbar .logo-img, .logo-img{max-height:44px;width:auto}
+@media (max-width:767px){.logo-img{max-height:30px}}
+button.btn.button{border:0;cursor:pointer}
+a:focus,button:focus,.form-control:focus{outline:2px solid #fec107;outline-offset:2px}
+
+/* The demo hides every .wow element until its scroll animation fires. If the animation does not
+   run (reduced motion, a slow or failed script, a printed page) the content stays invisible.
+   Content must never depend on an animation to be readable. */
+.wow{visibility:visible !important}
+@media (prefers-reduced-motion: reduce){
+  .wow,[data-wow-delay]{animation:none !important;visibility:visible !important;opacity:1 !important}
+}
+
+/* Brand tile: the demo blows the logo to 100% width inside a yellow block, which covered the
+   heading. Constrain it and give the banner room under the fixed navbar. */
+.navbar-brand{padding:10px 16px;display:flex;align-items:center}
+.navbar-brand img{width:auto !important;max-height:46px;display:block}
+.banner-section{padding-top:190px}
+@media (max-width:767px){
+  .navbar-brand{padding:8px 12px}
+  .navbar-brand img{max-height:32px}
+  .banner-section{padding-top:150px}
+}
