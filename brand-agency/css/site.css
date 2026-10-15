@@ -111,3 +111,9 @@ a:focus,button:focus,.form-control:focus{outline:2px solid #fec107;outline-offse
    links beside it are already dark on yellow, so the footer column follows them. */
 .side-menu .side-footer .text{color:#23262d}
 .side-menu .side-footer .menu-company-details .text b{color:#111216;font-weight:700}
+
+/* Her own photograph, added 2026-10-15 when she sent it. Sits under the heading in the
+   left column of the about section, so no existing block had to move. */
+.about-section .portrait{margin:28px 0 0;max-width:330px}
+.about-section .portrait img{width:100%;height:auto;display:block;border-radius:3px}
+@media (max-width:991.98px){.about-section .portrait{max-width:260px;margin-bottom:34px}}
